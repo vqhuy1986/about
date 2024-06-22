@@ -6,7 +6,7 @@ steps:
   - name: build
     image: nginx:alpine
     commands:
-        - COPY . /usr/share/nginx/html
+        - cp . /usr/share/nginx/html
   - name: publish  
     image: plugins/docker
     settings:
